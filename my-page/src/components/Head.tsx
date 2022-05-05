@@ -1,10 +1,21 @@
-import React from 'react'
+import React, {FC} from 'react'
 
-const Head = (props: any) => {
+interface IContacts {
+	link: string;
+	name: string;
+	icon?: string;
+}
+interface HeadProps {
+	name: string;
+	position: string;
+	links: IContacts[];
+}
+const Head: FC<HeadProps> = props => {
+	//console.log(autor.name)
 	const renderContact = () => {
 			return Object.keys(props.links).map((link, index) => {
 					return (
-					<li key={Math.random().toString()}>
+					<li key={link.toString()}>
 						<a 
 						target="_blank"
 						rel="noopener noreferrer"
@@ -15,7 +26,7 @@ const Head = (props: any) => {
 	return (
 		<header className="App-header flex">
 			<h2>{props.name}</h2>
-			<p>Intern React Developer</p>
+			<p>{props.position}</p>
 			<div className="App-conatat">
 				<ul>
 					{renderContact()}

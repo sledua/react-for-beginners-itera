@@ -1,6 +1,8 @@
-import React from 'react'
-
-const Content = (props : any) => {
+import React, { FC } from 'react'
+interface bioProps{
+	bio: string[];
+}
+const Content: FC<bioProps> = props => {
 	const renderContent = () => {
 				return Object.keys(props.bio).map((value, index) => {
 					return (
