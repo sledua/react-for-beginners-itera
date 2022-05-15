@@ -1,18 +1,38 @@
 {
+	"navigation": {
+		"UA": {
+			"logo": "Free Cours",
+			"main": "Головна",
+			"task":"Завдання",
+			"blog": "Блог",
+			"aboutI": "Виконавець",
+			"aboutCourse": "Натхнення"
+		},
+		"EN": {
+			"main": "Головна",
+			"task":"Task",
+			"blog": "Блог",
+			"aboutI": "Виконавець",
+			"aboutCourse": "Натхнення"
+		}
+	},
+	"main": {
+
+	},
 	"firstName": "Artem",
-	"position" : "Intern React Developer",
+	"position": "Intern React Developer",
 	"biography": [
-		"Skilled in multitasking and working on several projects simultaneously", 
+		"Skilled in multitasking and working on several projects simultaneously",
 		"Unique ability to improvise, grasp new skills and troubleshoot problems",
 		"Experienced in communicating with the creative team and clients",
 		"Well-organized with an ability to prioritize tasks",
 		"Easy learning, hardworking. Capable of working under time pressure and stress conditions",
-		"Committed team player, self-motivated I am organized, ambitious and creative, as well as being a good team-player with excellent communication skills.", 
+		"Committed team player, self-motivated I am organized, ambitious and creative, as well as being a good team-player with excellent communication skills.",
 		"I can adapt to new environments quickly."
 	],
-	"contact" : [
-		{"link" : "https://github.com/sledua", "name" : "GitHub"},
-		{"link" : "https://www.linkedin.com/in/artem-guida-27660917a", "name" : "linkedin"},
-		{"link" : "https://t.me/artSled", "name" : "telegram"}
+	"contact": [
+		{ "link": "https://github.com/sledua", "name": "GitHub" },
+		{ "link": "https://www.linkedin.com/in/artem-guida-27660917a", "name": "linkedin" },
+		{ "link": "https://t.me/artSled", "name": "telegram" }
 	]
 }
