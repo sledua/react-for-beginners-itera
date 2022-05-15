@@ -1,13 +1,13 @@
 {
 	"navigation": {
-		"UA": {
-			"logo": "Free Cours",
-			"main": "Головна",
-			"task":"Завдання",
-			"blog": "Блог",
-			"aboutI": "Виконавець",
-			"aboutCourse": "Натхнення"
-		},
+		"logo": "Free Cours",
+		"UA": [
+			{"name": "Головна", "path": "/"},
+			{"name":"Завдання", "path" :"/task"},
+			{"name": "Блог", "path":"/blog"},
+			{"name": "Виконавець", "path": "/aboutI"},
+			{"name": "Натхнення", "path": "/aboutCourse"}
+		],
 		"EN": {
 			"main": "Головна",
 			"task":"Task",

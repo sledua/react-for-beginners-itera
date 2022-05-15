@@ -1,20 +1,21 @@
 @import "vars";
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	font-family: $redHatDisplay-Black;
 	font-weight: 900;
 	margin: 0;
+	color: $darcBlue;
 }
 h2 {
 	font-size: calc(20px + 6vmin);
@@ -29,4 +30,38 @@ p {
 }
 .flex {
 	display: flex;
+}
+a {
+	font-family: $redHatDisplay-Bold;
+	font-weight: 700;
+	font-size: calc(1rem + 0.9vmin);
+	text-decoration: none;
+	color: $veryPaleBlue;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.navbar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	padding: 3rem 0;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.container {
+	width: 100%;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+header {
+	background-image: $headerGradient;
 }

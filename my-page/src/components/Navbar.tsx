@@ -1,44 +1,50 @@
 import React, { FC } from "react"
 import { Link, NavLink } from "react-router-dom"
-
+interface nav {
+	name: string
+	path: string
+}
 interface NavigationProps {
 	logo: string
-	main: string
-	task: string
+	navigation: nav[]
 }
 
 const Navbar: FC<NavigationProps> = (props) => {
+	const renderNavigation = () => {
+		return Object.keys(props.navigation).map((id, index) => {
+			return (
+				<li className="navbar-item" key={index.toString()}>
+					<NavLink
+						to={props.navigation[index].path}
+						// activeClassName="active"
+						className="navbar-item-link"
+					>
+						{props.navigation[index].name}
+					</NavLink>
+				</li>
+			)
+		})
+	}
 	return (
 		<>
-			<nav>
-				<div className="container">
-					<Link to="/">{props.logo}</Link>
-					<button aria-expanded="false"></button>
-					<div className="navbar">
-						<ul>
-							<li>
-								<NavLink
-									to="/"
-									//activeClassName="active"
-									className="nav"
-								>
-									{props.main}
-								</NavLink>
-							</li>
-							<li>
-								<NavLink
-									to="/"
-									//activeClassName="active"
-									className="nav"
-								>
-									{props.task}
-								</NavLink>
-							</li>
-						</ul>
+			<nav className="navbar">
+				<div className="container flex">
+					<Link to={props.navigation[4].path}>{props.logo}</Link>
+					<button className="menu-toggler" aria-expanded="false"></button>
+					<div>
+						<ul className="navbar-list flex">{renderNavigation()}</ul>
 					</div>
 				</div>
 			</nav>
-			<header></header>
+			<header>
+				<div className="header">
+					<span></span>
+					<div className="container">
+						<h1>{props.logo}</h1>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, officiis?</p>
+					</div>
+				</div>
+			</header>
 		</>
 	)
 }

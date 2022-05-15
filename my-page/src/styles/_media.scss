@@ -1,0 +1,24 @@
+@import "vars";
+
+@media (min-width: 576px){
+	.container {
+		max-width: 540px
+	}
+}
+@media (min-width: 768px){
+	.container {
+		max-width: 720px
+	}
+	.menu-toggler {
+		display: none;
+	}
+}
+@media (min-width: 1400px){
+	.container {
+		max-width: 1320px
+	}
+	.menu-toggler {
+		display: none;
+	}
+}
+
