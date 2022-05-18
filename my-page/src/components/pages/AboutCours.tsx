@@ -1,9 +1,8 @@
 import React from 'react'
-import Layout from '../Layout'
 
 const AboutCours = () => {
 	return (
-		<Layout/>
+		<h2>About course</h2>
 	)
 }
 

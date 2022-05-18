@@ -1,9 +1,8 @@
 import React from 'react'
-import Layout from '../Layout'
 
 const Error = () => {
 	return (
-		<Layout/>
+		<h2>404 page not found</h2>
 	)
 }
 
