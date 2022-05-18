@@ -1,8 +1,9 @@
 import React from 'react'
+import ContentType from '../ContentType'
 
 const Blog = () => {
 	return (
-		<h2>Blog</h2>
+		<ContentType/>
 	)
 }
 

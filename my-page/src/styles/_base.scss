@@ -5,6 +5,7 @@ body {
 		"Droid Sans", "Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: $body;
 }
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -18,13 +19,24 @@ h4 {
 	margin: 0;
 	color: $darcBlue;
 }
+h1 {
+	font-size: calc(2rem + 6vmin);
+}
 h2 {
-	font-size: calc(20px + 6vmin);
+	font-size: calc(2rem + 6vmin);
+}
+h3 {
+	font-size: calc(1.2rem + 2vmin);
+}
+h4 {
+	font-size: calc(1rem + 2vmin);
 }
 p {
 	font-family: $redHatDisplay-Medium;
 	font-weight: 500;
+	font-size: calc(1rem + 0.3vmin);
 	margin: 0;
+	color: $desaturatedBlue;
 }
 .grid {
 	display: grid;
@@ -35,7 +47,7 @@ p {
 a {
 	font-family: $redHatDisplay-Bold;
 	font-weight: 700;
-	font-size: calc(1rem + 0.9vmin);
+	font-size: calc(1rem + 0.5vmin);
 	text-decoration: none;
 	color: $veryPaleBlue;
 }
@@ -67,10 +79,16 @@ ul {
 	padding-left: 0;
 	padding-right: 0;
 }
+.row {
+	justify-items: center;
+}
 header {
 	background-image: $headerGradient;
 }
 .padding-6 {
 	padding-top: 6rem;
 	padding-bottom: 6rem;
+}
+.space {
+	justify-content: space-between;
 }

@@ -1,8 +1,9 @@
 import React from 'react'
+import ContentType from '../ContentType'
 
 const AboutI = () => {
 	return (
-		<h2>About</h2>
+		<ContentType/>
 	)
 }
 

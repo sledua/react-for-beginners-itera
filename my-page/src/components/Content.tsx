@@ -19,7 +19,7 @@ const Content: FC<allProps> = (props) => {
 		return Object.keys(props.blok).map((l, index) => {
 			return (
 				<div className="box" key={l+Math.random().toString()}>
-					<h4>{props.blok[index].head}</h4>
+					<h3>{props.blok[index].head}</h3>
 					<p>{props.blok[index].body}</p>
 				</div>
 			)
@@ -29,9 +29,9 @@ const Content: FC<allProps> = (props) => {
 		<div className="card-page">
 			<section className="padding-6">
 				<div className="container content">
-					<div className="row-box flex">
+					<div className="row-box flex space">
 						<div className="column box-item grid">{renderBox()}</div>
-						<div className="column">
+						<div className="column -mini">
 							<div className="card">
 								<div className="card-header">
 									<span>
@@ -41,7 +41,7 @@ const Content: FC<allProps> = (props) => {
 								<div className="card-body">
 									<h4>{props.link.head}</h4>
 									<p>{props.link.body}</p>
-									<button>{props.link.buttonName}</button>
+									<button className="btn">{props.link.buttonName}</button>
 								</div>
 							</div>
 						</div>
