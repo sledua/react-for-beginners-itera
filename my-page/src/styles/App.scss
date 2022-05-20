@@ -145,5 +145,12 @@
 }
 .information {
 	width: 60%;
+	.links {
+		a {
+			color: $darcBlue;
+			font-size: 1.3rem;
+			margin-right: 0.6rem;
+		}
+	}
 }
 @import "media";
