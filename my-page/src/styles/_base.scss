@@ -7,6 +7,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: $body;
 	font-size: $defaultSize;
+	line-height: 1.428;
 }
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -21,16 +22,16 @@ h4 {
 	color: $darcBlue;
 }
 h1 {
-	font-size: calc(2rem + 6vmin);
+	font-size: 2.5rem;
 }
 h2 {
-	font-size: calc(2rem + 6vmin);
+	font-size: 2rem;
 }
 h3 {
-	font-size: calc(1.2rem + 2vmin);
+	font-size: 1.75rem;
 }
 h4 {
-	font-size: calc(1rem + 2vmin);
+	font-size: 1.5rem;
 }
 p {
 	font-family: $redHatDisplay-Medium;
@@ -70,7 +71,7 @@ ul {
 	}
 }
 .container {
-	width: 100%;
+	//width: 100%;
 	padding-right: 2rem;
 	padding-left: 2rem;
 	margin-left: auto;

@@ -1,24 +1,75 @@
 @import "vars";
 
-@media (min-width: 576px){
+
+@media (min-width: 576px) {
 	.container {
-		max-width: 540px
-	}
-}
-@media (min-width: 768px){
-	.container {
-		max-width: 720px
+		max-width: 540px;
 	}
 	.menu-toggler {
-		display: none;
-	}
-}
-@media (min-width: 1400px){
-	.container {
-		max-width: 1320px
-	}
-	.menu-toggler {
-		display: none;
+		display: block;
 	}
 }
 
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+	
+	.menu-toggler {
+		display: none;
+	}
+}
+@media (min-width: 1024px) {
+	.container {
+		max-width: 980px;
+	}
+	
+	.menu-toggler {
+		display: none;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+	.menu-toggler {
+		display: none;
+	}
+
+}
+@media (min-width: 1400px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.75rem;
+	}
+	h4 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.container {
+		max-width: 1320px;
+	}
+	.menu-toggler {
+		display: none;
+	}
+}
+@media (max-width: 573px) {
+	.navbar-list {
+		display: none;
+	}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+	.navbar-list {
+		display: none;
+	}
+	.menu-toggler {
+		display: block;
+	}
+}
