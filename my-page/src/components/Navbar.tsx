@@ -1,5 +1,7 @@
 import React, { FC } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 interface nav {
 	name: string
 	path: string
@@ -30,7 +32,9 @@ const Navbar: FC<NavigationProps> = (props) => {
 			<nav className="navbar">
 				<div className="container flex">
 					<Link to={props.navigation[4].path}>{props.logo}</Link>
-					<button className="menu-toggler" aria-expanded="false"></button>
+					<button className="menu-toggler" aria-expanded="false">
+					<FontAwesomeIcon icon={faBars} />
+					</button>
 					
 						<ul className="navbar-list flex">{renderNavigation()}</ul>
 					

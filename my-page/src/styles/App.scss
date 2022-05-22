@@ -37,6 +37,13 @@
 		}
 	}
 }
+.menu-toggler {
+	background-color: transparent;
+	box-shadow: none;
+	border-color: transparent;
+	color: $white;
+	font-size: 1.2rem;
+}
 .card-page {
 	position: relative;
 	margin-top: -4rem;
