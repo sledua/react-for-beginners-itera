@@ -3,7 +3,7 @@ import ContentType from '../ContentType'
 
 const Blog = () => {
 	return (
-		<ContentType page="blog" bio={['']} contact={[]}/>
+		<ContentType page="blog" bio={['']} contact={[]} items={[]}/>
 	)
 }
 

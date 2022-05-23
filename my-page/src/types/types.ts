@@ -10,9 +10,15 @@ export interface ContentTypeAboutAutor {
 	contact: ContactAutor[]
 	position?: string
 	header?: HeaderProps[]
+	items: TaskPropsList[]
 }
 export interface HeaderProps {
 	headerTitle?: string
 	headerParagraf?: string
 	page?: string 
+}
+export interface TaskPropsList {
+	title: string
+	pSmol: string
+	path?: string
 }

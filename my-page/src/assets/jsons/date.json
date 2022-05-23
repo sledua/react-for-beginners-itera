@@ -76,7 +76,22 @@
 		"header" : {
 			"title": "Сторінка для виконаних робіт",
 			"p": "Don't count your chickens before they hatch."
-		}
+		},
+		"list" : [
+				{"title" : "0 Lecture: What is React", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/0"},
+				{"title" : "1 Workshop: A new project with create-react-app", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/1"},
+				{"title" : "2 Lecture: What is React Component", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/2"},
+				{"title" : "3 Lecture: React with Hooks", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/3"},
+				{"title" : "4 Workshop: Building React Component", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/4"},
+				{"title" : "5 Lecture: React - from plain CSS to CSSinJS", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/5"},
+				{"title" : "6 Workshop: Managing state in React", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/6"},
+				{"title" : "7 Workshop: Forms - Default way and React-Hook-Forms", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/7"},
+				{"title" : "8 Lecture: Routing in React", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/8"},
+				{"title" : "9 Lecture: React and network", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/9"},
+				{"title" : "10 Lecture: UI libraries", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/10"},
+				{"title" : "11 Lecture: Tests", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/11"},
+				{"title" : "12 Lecture: TypeScript for beginners", "pSmol" : "Розповідають про те що тут такого в тому React", "path" : "/task/12"}
+		]
 	},
 	"blog": {
 		"header" : {

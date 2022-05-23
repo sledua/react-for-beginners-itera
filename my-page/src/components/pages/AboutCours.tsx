@@ -2,7 +2,7 @@ import ContentType from '../ContentType'
 
 const AboutCours = () => {
 	return (
-		<ContentType page='aboutCourrs' bio={['']} contact={[]}/>
+		<ContentType page='aboutCourrs' bio={['']} contact={[]} items={[]}/>
 	)
 }
 
