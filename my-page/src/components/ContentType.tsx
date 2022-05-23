@@ -2,15 +2,35 @@ import { FC } from "react"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { ContentTypeAboutAutor } from "../types/types"
+import { ContentTypeAboutAutor} from "../types/types"
+import Header from "./Header"
+import data from "../assets/jsons/date.json"
 library.add(fab)
 
 interface Props extends ContentTypeAboutAutor{}
 
-const ContentType: FC<Props> = props => {
+const ContentType: FC<Props> = (props) => {
 	switch (props.page) {
+		case "task": {
+			return (
+				<>
+				<Header page={props.page} headerTitle={data.task.header.title} headerParagraf={data.task.header.p}/>
+				<div className="card-page">
+					<section className="padding-6">
+						<div className="container content">
+							<div className="row grid">
+								<h1>Task</h1>
+							</div>
+						</div>
+					</section>
+				</div>
+				</>
+			)
+		}
 		case "blog": {
 			return (
+				<>
+				<Header page={props.page} headerTitle={data.blog.header.title} headerParagraf={data.blog.header.p}/>
 				<div className="card-page">
 					<section className="padding-6">
 						<div className="container content">
@@ -20,6 +40,7 @@ const ContentType: FC<Props> = props => {
 						</div>
 					</section>
 				</div>
+				</>
 			)
 		}
 		case "autor": {
@@ -38,6 +59,8 @@ const ContentType: FC<Props> = props => {
 				})
 			}
 			return (
+				<>
+				<Header page={props.page}/>
 				<div className="card-page">
 					<section className="padding-6">
 						<div className="container content">
@@ -61,10 +84,13 @@ const ContentType: FC<Props> = props => {
 						</div>
 					</section>
 				</div>
+				</>
 			)
 		}
 		default: {
 			return (
+				<>
+				<Header/>
 				<div className="card-page">
 					<section className="padding-6">
 						<div className="container content">
@@ -74,6 +100,7 @@ const ContentType: FC<Props> = props => {
 						</div>
 					</section>
 				</div>
+				</>
 			)
 		}
 	}

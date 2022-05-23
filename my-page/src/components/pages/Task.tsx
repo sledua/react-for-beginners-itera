@@ -1,10 +1,8 @@
-import React from 'react'
+import ContentType from '../ContentType'
 
 const Task = () => {
 	return (
-		<>
-		<h1>Task page</h1>
-		</>
+		<ContentType page="task" bio={['']} contact={[]}/>
 	)
 }
 

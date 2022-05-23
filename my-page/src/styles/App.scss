@@ -8,16 +8,8 @@
 		margin-right: 0;
 	}
 }
-.header {
-	padding: 0;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	background-size: cover;
-	background-position: 50%;
-	background-image: url(../assets/img/header-bg.jpg);
-	min-height: 70vh;
+header {
+	background-image: $headerGradient;
 	> span {
 		opacity: 0.6;
 		background-image: $headerGradient;

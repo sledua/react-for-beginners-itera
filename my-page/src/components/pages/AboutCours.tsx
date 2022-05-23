@@ -1,8 +1,8 @@
-import React from 'react'
+import ContentType from '../ContentType'
 
 const AboutCours = () => {
 	return (
-		<h2>About course</h2>
+		<ContentType page='aboutCourrs' bio={['']} contact={[]}/>
 	)
 }
 

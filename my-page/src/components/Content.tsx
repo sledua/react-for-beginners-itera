@@ -1,4 +1,5 @@
 import React, { FC } from "react"
+import Header from "./Header"
 interface headerBlok {
 	head: string
 	icon?: string
@@ -13,6 +14,7 @@ interface headerButton {
 interface allProps {
 	blok: headerBlok[]
 	link: headerButton
+	page: string
 }
 const Content: FC<allProps> = (props) => {
 	const renderBox = () => {
@@ -25,31 +27,42 @@ const Content: FC<allProps> = (props) => {
 			)
 		})
 	}
-	return (
-		<div className="card-page">
-			<section className="padding-6">
-				<div className="container content">
-					<div className="row-box flex space">
-						<div className="column box-item grid">{renderBox()}</div>
-						<div className="column -mini">
-							<div className="card">
-								<div className="card-header">
-									<span>
-										<img src={require("../assets/img/github-img.jpg")} alt="github" />
-									</span>
-								</div>
-								<div className="card-body">
-									<h4>{props.link.head}</h4>
-									<p>{props.link.body}</p>
-									<button className="btn">{props.link.buttonName}</button>
+	switch (props.page) {
+		case "home":
+			return (
+				<>
+				<Header page={props.page}/>
+				<div className="card-page">
+					<section className="padding-6">
+						<div className="container content">
+							<div className="row-box flex space">
+								<div className="column box-item grid">{renderBox()}</div>
+								<div className="column -mini">
+									<div className="card">
+										<div className="card-header">
+											<span>
+												<img src={require("../assets/img/github-img.jpg")} alt="github" />
+											</span>
+										</div>
+										<div className="card-body">
+											<h4>{props.link.head}</h4>
+											<p>{props.link.body}</p>
+											<button className="btn">{props.link.buttonName}</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
+					</section>
 				</div>
-			</section>
-		</div>
-	)
+				</>
+			)
+		default:
+			return (
+				<h2>oops</h2>
+			)
+	}
+	
 }
 
 export default Content

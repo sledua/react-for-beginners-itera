@@ -70,14 +70,19 @@
 				"buttonName": "Click",
 				"buttonLink": "https://github.com/Drag13/react-learning-course-short"
 			}
-		},
-		"h1": "Home page"
+		}
 	},
 	"task": {
-		"h1": "task page"
+		"header" : {
+			"title": "Сторінка для виконаних робіт",
+			"p": "Don't count your chickens before they hatch."
+		}
 	},
 	"blog": {
-		"h1": "blog page"
+		"header" : {
+			"title": "Вітаю у блозі",
+			"p": "Don't count your chickens before they hatch."
+		}
 	},
 	"aboutI": {
 		"firstName": "Artem",
